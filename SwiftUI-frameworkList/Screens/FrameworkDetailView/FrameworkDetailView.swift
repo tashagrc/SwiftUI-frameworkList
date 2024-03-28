@@ -27,8 +27,12 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                AFButton(title: "Learn More")
-            } // atur bagaimana safarinya dipresentasikan
+                Label("Learn More", systemImage: "book.fill")
+            }.buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .foregroundColor(.white)
+                .buttonBorderShape(.roundedRectangle(radius: 20))
+                .tint(.red) // atur bagaimana safarinya dipresentasikan
             
             
         } // buat tampilan safarinya jd fullscreen
